@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<component>
+    <dependencySets>
+        <dependencySet>
+            <excludes>
+                <exclude>org.apache.sshd:sshd-osgi</exclude>
+                <exclude>org.apache.sshd:sshd-git</exclude>
+                <exclude>org.apache.sshd:sshd-ldap</exclude>
+                <exclude>org.apache.sshd:sshd-contrib</exclude>
+                <exclude>org.apache.sshd:sshd-putty</exclude>
+                <exclude>org.apache.sshd:sshd-openpgp</exclude>
+                <exclude>org.apache.sshd:sshd-spring-sftp</exclude>
+                <exclude>org.springframework:*</exclude>
+                <exclude>org.springframework.retry:*</exclude>
+                <exclude>io.projectreactor:*</exclude>
+                <exclude>org.reactivestreams:*</exclude>
+                <exclude>commons-io:commons-io</exclude>
+                <exclude>org.springframework.integration:*</exclude>
+                <exclude>org.eclipse.jgit:*</exclude>
+                <exclude>com.jcraft:*</exclude>
+                <exclude>com.googlecode.javaewah:JavaEWAH</exclude>
+                <exclude>org.c02e.jpgpj:jpgpj</exclude>
+            </excludes>
+            <outputDirectory>lib</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+        <dependencySet>
+            <includes>
+                <include>org.apache.sshd:sshd-osgi</include>
+                <include>org.apache.sshd:sshd-git</include>
+                <include>org.apache.sshd:sshd-ldap</include>
+                <include>org.apache.sshd:sshd-contrib</include>
+                <include>org.apache.sshd:sshd-putty</include>
+                <include>org.apache.sshd:sshd-spring-sftp</include>
+                <include>org.apache.sshd:sshd-openpgp</include>
+            </includes>
+            <outputDirectory>extras</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+        <dependencySet>
+            <includes>
+                <include>org.springframework:*</include>
+                <include>org.springframework.retry:*</include>
+                <include>org.springframework.integration:*</include>
+                <include>org.eclipse.jgit:*</include>
+                <include>io.projectreactor:*</include>
+                <include>org.reactivestreams:*</include>
+                <include>commons-io:commons-io</include>
+                <include>com.jcraft:*</include>
+                <include>com.googlecode.javaewah:JavaEWAH</include>
+                <include>org.c02e.jpgpj:jpgpj</include>
+            </includes>
+            <outputDirectory>dependencies</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+    </dependencySets>
+</component>
